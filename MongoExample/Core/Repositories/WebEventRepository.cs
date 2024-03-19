@@ -25,6 +25,13 @@ public class WebEventRepository
         
         return collection.Find(x => x._id == objectId).FirstOrDefault();
     }
+    
+    public List<WebEventModel> GetEvents()
+    {
+        var collection = _client.Collection<WebEventModel>(_databaseName, _collectionName);
+            
+        return collection.Find(_ => true).ToList();
+    }
 
     public void InsertOne(WebEventModel item)
     {

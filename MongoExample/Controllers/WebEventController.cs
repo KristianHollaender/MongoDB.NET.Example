@@ -20,6 +20,12 @@ public class WebEventController : ControllerBase
     {
         return _webEventService.GetEvent(id);
     }
+
+    [HttpGet("GetEvents")]
+    public List<WebEventModel> GetEvents()
+    {
+        return _webEventService.GetEvents();
+    }
     
     [HttpPost]
     public void SaveEvent([FromBody] WebEventModel webEvent)

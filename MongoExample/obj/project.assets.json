@@ -1234,29 +1234,32 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.15",
+      "MongoDB.Bson >= 2.24.0",
       "MongoDB.Driver >= 2.24.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "/Users/patrickstolc/.nuget/packages/": {}
+    "C:\\Users\\Krist\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrickstolc/RiderProjects/MongoExample/MongoExample/MongoExample.csproj",
+      "projectUniqueName": "C:\\Users\\Krist\\Desktop\\GitHub\\MongoDB.NET.Example\\MongoExample\\MongoExample.csproj",
       "projectName": "MongoExample",
-      "projectPath": "/Users/patrickstolc/RiderProjects/MongoExample/MongoExample/MongoExample.csproj",
-      "packagesPath": "/Users/patrickstolc/.nuget/packages/",
-      "outputPath": "/Users/patrickstolc/RiderProjects/MongoExample/MongoExample/obj/",
+      "projectPath": "C:\\Users\\Krist\\Desktop\\GitHub\\MongoDB.NET.Example\\MongoExample\\MongoExample.csproj",
+      "packagesPath": "C:\\Users\\Krist\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Krist\\Desktop\\GitHub\\MongoDB.NET.Example\\MongoExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/patrickstolc/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1278,6 +1281,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.15, )"
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "[2.24.0, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
@@ -1307,7 +1314,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

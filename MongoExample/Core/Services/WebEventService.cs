@@ -16,6 +16,10 @@ public class WebEventService
         return _webEventRepository.GetById(id);
     }
     
+    public List<WebEventModel> GetEvents(){
+        return _webEventRepository.GetEvents();
+    }
+    
     public void SaveEvent(WebEventModel webEvent){
         _webEventRepository.InsertOne(webEvent);
     }

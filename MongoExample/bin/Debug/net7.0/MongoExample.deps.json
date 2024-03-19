@@ -9,6 +9,7 @@
       "MongoExample/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.15",
+          "MongoDB.Bson": "2.24.0",
           "MongoDB.Driver": "2.24.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },

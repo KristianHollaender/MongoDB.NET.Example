@@ -12,5 +12,4 @@ public static class WebEventServiceFactory
         var repository = new WebEventRepository(client);
         return new WebEventService(repository);
     }
-    
 }
