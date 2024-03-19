@@ -38,4 +38,10 @@ public class UserController : ControllerBase
     {
         return _userService.DeleteUser(id);
     }
+
+    [HttpPut]
+    public User UpdateUserById(string id, User user)
+    {
+        return _userService.UpdateUser(id, user);
+    }
 }

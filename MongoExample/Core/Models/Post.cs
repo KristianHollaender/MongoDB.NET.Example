@@ -9,6 +9,6 @@ namespace MongoExample.Core.Models
         public string Content { get; set; }
         public string UserId { get; set; }
         public string BlogID { get; set; }
-        public List<ObjectId> CommentIds { get; }
+        public List<string> CommentIds { get; set; }
     }
 }

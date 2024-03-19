@@ -32,4 +32,9 @@ public class PostService
     {
         return _postRepository.DeleteOne(id);
     }
+
+    public Post UpdatePost(string id, Post post)
+    {
+        return _postRepository.UpdateOne(id, post);
+    }
 }

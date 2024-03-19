@@ -35,26 +35,14 @@ public class CommentRepository
 
     public void InsertOne(Comment comment)
     {
-        // Insert the comment into the comments collection
-        var commentsCollection = _client.Collection<Comment>(_databaseName, _collectionName);
-        commentsCollection.InsertOne(comment);
-
-        // Retrieve the post the comment belongs to
-        var postsCollection = _client.Collection<Post>(_databaseName, "posts");
-        var post = postsCollection.Find(x => x.Id == new ObjectId(comment.PostId)).FirstOrDefault();
-
-        // Update the post's CommentIds list
-        if (post != null)
-        {
-            post.CommentIds.Add(comment.Id);
-            postsCollection.ReplaceOne(x => x.Id == post.Id, post);
-        }
+        var collection = _client.Collection<Comment>(_databaseName, _collectionName);
+        collection.InsertOne(comment);
     }
     
-    public void InsertMany(IEnumerable<Comment> items)
+    public void InsertMany(IEnumerable<Comment> comments)
     {
         var collection = _client.Collection<Comment>(_databaseName, _collectionName);
-        collection.InsertMany(items);
+        collection.InsertMany(comments);
     }
     
     public Comment DeleteOne(string id)

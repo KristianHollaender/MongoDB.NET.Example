@@ -32,4 +32,9 @@ public class UserService
     {
         return _userRepository.DeleteOne(id);
     }
+
+    public User UpdateUser(string id, User user)
+    {
+        return _userRepository.UpdateOne(id, user);
+    }
 }

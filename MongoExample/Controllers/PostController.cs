@@ -38,4 +38,10 @@ public class PostController : ControllerBase
     {
         return _postService.DeletePost(id);
     }
+
+    [HttpPut]
+    public Post UpdatePostById(string id, Post post)
+    {
+        return _postService.UpdatePost(id, post);
+    }
 }

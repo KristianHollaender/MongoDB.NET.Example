@@ -53,4 +53,25 @@ public class UserRepository
         var deletedUser = collection.FindOneAndDelete(x => x.Id == objectId);
         return deletedUser;
     }
+    
+    public User UpdateOne(string id, User updatedUser)
+    {
+        var objectId = new ObjectId(id);
+        var collection = _client.Collection<User>(_databaseName, _collectionName);
+
+        var filter = Builders<User>.Filter.Eq(u => u.Id, objectId);
+        var update = Builders<User>.Update
+            .Set(user => user.Name, updatedUser.Name)
+            .Set(user => user.Email, updatedUser.Email);
+
+        var options = new FindOneAndUpdateOptions<User>
+        {
+            ReturnDocument = ReturnDocument.After
+        };
+
+
+        var userToUpdate = collection.FindOneAndUpdate(filter, update, options);
+
+        return userToUpdate;
+    }
 }
