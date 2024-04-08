@@ -2,6 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoExample", "MongoExample\MongoExample.csproj", "{A6B7CB9A-BEBB-4C0F-91BA-9A36FCCA2696}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticsService", "AnalyticsService\AnalyticsService.csproj", "{2807A360-BAE3-4DB1-83D8-C7D9EDA9F157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73B2D6A3-3D84-42D9-919A-440C42B99CBB}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciService", "FibonacciService\FibonacciService.csproj", "{D9098AE5-14A4-4B26-B887-E17193A5D39A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +21,13 @@ Global
 		{A6B7CB9A-BEBB-4C0F-91BA-9A36FCCA2696}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B7CB9A-BEBB-4C0F-91BA-9A36FCCA2696}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B7CB9A-BEBB-4C0F-91BA-9A36FCCA2696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2807A360-BAE3-4DB1-83D8-C7D9EDA9F157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2807A360-BAE3-4DB1-83D8-C7D9EDA9F157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2807A360-BAE3-4DB1-83D8-C7D9EDA9F157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2807A360-BAE3-4DB1-83D8-C7D9EDA9F157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9098AE5-14A4-4B26-B887-E17193A5D39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9098AE5-14A4-4B26-B887-E17193A5D39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9098AE5-14A4-4B26-B887-E17193A5D39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9098AE5-14A4-4B26-B887-E17193A5D39A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
